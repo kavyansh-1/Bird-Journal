@@ -15,10 +15,13 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 
 
 def _prompt(summary: list[dict], place: str, when: str, language: str) -> str:
+    # Decide "certain vs uncertain" in code, not in the model: small models
+    # get this wrong (e.g. calling a 100% detection "uncertain").
     lines = "\n".join(
         f"- {s['common_name']} ({s['scientific_name']}): detected in "
         f"{s['count']} three-second windows, best confidence "
-        f"{s['best_confidence']:.0%}"
+        f"{s['best_confidence']:.0%} "
+        f"[{'CONFIDENT' if s['best_confidence'] >= 0.6 else 'UNCERTAIN'}]"
         for s in summary
     )
     return (
@@ -29,8 +32,11 @@ def _prompt(summary: list[dict], place: str, when: str, language: str) -> str:
         "- Write exactly 3 sentences, in first person ('I heard...').\n"
         "- Use ONLY the facts listed. Do not add habitat, appearance, or "
         "behaviour facts that are not listed. Do not invent species.\n"
-        "- Say 'detected in N windows', never 'heard N times'.\n"
-        "- If confidence is under 60%, say it is uncertain.\n"
+        "- Use the exact numbers given. Never write a letter like 'N' in "
+        "place of a number, and never say 'heard N times'.\n"
+        "- Only call a species uncertain if its line is marked [UNCERTAIN]. "
+        "If it is marked [CONFIDENT], do not say it is uncertain.\n"
+        "- Do not repeat any sentence.\n"
         "- Then add one final line starting with 'Try next time:' that "
         "suggests putting the phone away and looking for the bird by eye. "
         "Write that line only once.\n\n"
