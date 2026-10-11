@@ -103,7 +103,7 @@ This uses a fake BirdNET, so it needs no model download. It checks result parsin
 
 ## Results so far
 
-Tested on a 46-second recording of a Coppersmith Barbet from Sikar, Rajasthan, taken from [Xeno-canto](https://xeno-canto.org) (recordist: Dipendra Maharshi, [add license]). BirdNET identified it at 100% confidence in all 16 of its 3-second windows.
+Tested on a 46-second recording of a Coppersmith Barbet from Sikar, Rajasthan, taken from [Xeno-canto](https://xeno-canto.org) (recordist: Dipendra Maharshi). BirdNET identified it at 100% confidence in all 16 of its 3-second windows.
 
 That was a loud, clean clip, so it checks that the pipeline works, not how accurate it is on real field audio. **Field-walk results:** [add yours here].
 
@@ -134,8 +134,3 @@ That was a loud, clean clip, so it checks that the pipeline works, not how accur
 ## License
 
 Released under the [MIT License](LICENSE).
-- [Ollama](https://ollama.com) and the open-weight model authors.
-
-## License
-
-[Choose a license, e.g. MIT, and add a LICENSE file.]
