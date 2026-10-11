@@ -50,8 +50,8 @@ The idea is that the screen is the shortest part of the experience. You go outsi
 You need Python 3.10+ and internet for the first run only.
 
 ```bash
-git clone <your-repo-url>
-cd birdjournal
+git clone https://github.com/kavyansh-1/Bird-Journal.git
+cd Bird-Journal
 pip install -r requirements.txt
 
 # Install Ollama from https://ollama.com, then pull a small model:
@@ -103,7 +103,7 @@ This uses a fake BirdNET, so it needs no model download. It checks result parsin
 
 ## Results so far
 
-Tested on a 46-second recording of a Coppersmith Barbet from Sikar, Rajasthan, taken from [Xeno-canto](https://xeno-canto.org) (recordist: Dipendra Maharshi). BirdNET identified it at 100% confidence in all 16 of its 3-second windows.
+Tested on a 46-second recording of a Coppersmith Barbet from Sikar, Rajasthan, taken from [Xeno-canto](https://xeno-canto.org) (recordist: Dipendra Maharshi, [add license]). BirdNET identified it at 100% confidence in all 16 of its 3-second windows.
 
 That was a loud, clean clip, so it checks that the pipeline works, not how accurate it is on real field audio. **Field-walk results:** [add yours here].
 
