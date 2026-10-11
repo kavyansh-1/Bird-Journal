@@ -133,4 +133,9 @@ That was a loud, clean clip, so it checks that the pipeline works, not how accur
 
 ## License
 
+Released under the [MIT License](LICENSE).
+- [Ollama](https://ollama.com) and the open-weight model authors.
+
+## License
+
 [Choose a license, e.g. MIT, and add a LICENSE file.]
