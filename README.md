@@ -103,9 +103,11 @@ This uses a fake BirdNET, so it needs no model download. It checks result parsin
 
 ## Results so far
 
-Tested on a 46-second recording of a Coppersmith Barbet from Sikar, Rajasthan, taken from [Xeno-canto](https://xeno-canto.org) (recordist: Dipendra Maharshi, [add license]). BirdNET identified it at 100% confidence in all 16 of its 3-second windows.
+Tested on a 46-second recording of a Coppersmith Barbet from Sikar, Rajasthan, taken from [Xeno-canto](https://xeno-canto.org) (recordist: Dipendra Maharshi, [XC123456](https://xeno-canto.org/123456), licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/); used unmodified as a test input and not included in this repo). BirdNET identified it at 100% confidence in all 16 of its 3-second windows.
 
-That was a loud, clean clip, so it checks that the pipeline works, not how accurate it is on real field audio. **Field-walk results:** [add yours here].
+That was a loud, clean clip, so it checks that the pipeline works, not how accurate it is on real field audio. **Field-walk results:** 
+<img width="1532" height="241" alt="image" src="https://github.com/user-attachments/assets/53f0255f-f9a1-4c22-bdcf-c1b69caf67c7" />
+
 
 ## What I learned
 
@@ -128,7 +130,7 @@ That was a loud, clean clip, so it checks that the pipeline works, not how accur
 ## Credits
 
 - [BirdNET](https://github.com/birdnet-team/BirdNET-Analyzer) by the K. Lisa Yang Center for Conservation Bioacoustics at the Cornell Lab of Ornithology and Chemnitz University of Technology.
-- Test recording from [Xeno-canto](https://xeno-canto.org), recorded by Dipendra Maharshi.
+- Test recording of a Coppersmith Barbet from [Xeno-canto](https://xeno-canto.org) ([XC123456](https://xeno-canto.org/123456)), recorded by Dipendra Maharshi in Sikar, Rajasthan, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). The audio is not included in this repo; download it from the link to reproduce the test. The MIT license in this repo covers the code only.
 - [Ollama](https://ollama.com) and the open-weight model authors.
 
 ## License
