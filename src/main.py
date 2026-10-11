@@ -13,8 +13,8 @@ import datetime as dt
 import sys
 from pathlib import Path
 
-from detector import detect, summarise
-from journal import write_entry
+from src.detector import detect, summarise
+from src.journal import write_entry
 
 
 def main() -> int:

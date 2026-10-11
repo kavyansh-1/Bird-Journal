@@ -8,8 +8,8 @@ from pathlib import Path
 
 import pandas as pd
 
-import detector
-import journal
+import src.detector as detector
+import src.journal as journal
 
 
 class FakePreds:
